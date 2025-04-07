@@ -10385,7 +10385,6 @@
     bl = { title: "Ignored" },
     hl = "Ignore",
     ml = "Cannot Load Announcement, please try again later",
-    gl = "Quillbot Premium Crack need to verify that you're human",
     _l = "Move The Slider To Number: ",
     Ol = "Join Telegram Group",
     wl = "Verification Code",
@@ -10512,21 +10511,6 @@
     { enqueueSnackbar: zl, closeSnackbar: $l, removeSnackbar: Hl } = Bl.actions,
     Vl = (e) => e.snackbar.notifications;
   var ql = Bl.reducer;
-  const Gl = xi.exports.createAsyncThunk(
-      "verify/requestVerify",
-      async (e, { rejectWithValue: t }) => {
-        try {
-          return await (
-            await fetch(
-              "https://ragug.github.io/quillbot-premium-free/verify.json",
-              { cache: "no-cache" }
-            )
-          ).json();
-        } catch (e) {
-          t(e);
-        }
-      }
-    ),
     Kl = xi.exports.createSlice({
       name: "verify",
       initialState: {
